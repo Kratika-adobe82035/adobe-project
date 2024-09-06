@@ -16,8 +16,8 @@
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --link-color: #0436ff;
+  --link-hover-color: #022ff8;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -155,7 +155,7 @@ button {
 
 /* links */
 a:any-link {
-  color: #f00b0b;
+  color: var(--link-color);
   text-decoration: none;
   word-break: break-word;
 }
@@ -181,7 +181,7 @@ button {
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: #6106f3;
+  background-color: var(--link-color);
   color: var(--background-color);
   cursor: pointer;
   overflow: hidden;
