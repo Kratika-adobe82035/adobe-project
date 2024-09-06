@@ -80,6 +80,10 @@ body {
   line-height: 1.6;
 }
 
+a:any-link {
+  color: #fb693b;
+}
+
 body.appear {
   display: block;
 }
