@@ -80,10 +80,6 @@ body {
   line-height: 1.6;
 }
 
-a:any-link {
-  color: #fb693b;
-}
-
 body.appear {
   display: block;
 }
@@ -159,7 +155,7 @@ button {
 
 /* links */
 a:any-link {
-  color: var(--link-color);
+  color: #fb693b;
   text-decoration: none;
   word-break: break-word;
 }
@@ -185,7 +181,7 @@ button {
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
+  background-color: #fb693b;
   color: var(--background-color);
   cursor: pointer;
   overflow: hidden;
