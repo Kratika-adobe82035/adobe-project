@@ -12,7 +12,7 @@
 
 :root {
   /* colors */
-  --background-color: #dbf3f7;
+  --background-color: #fefcfe;
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: #131313;
@@ -155,7 +155,7 @@ button {
 
 /* links */
 a:any-link {
-  color: #fb693b;
+  color: #f00b0b;
   text-decoration: none;
   word-break: break-word;
 }
@@ -181,7 +181,7 @@ button {
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: #fb693b;
+  background-color: #6106f3;
   color: var(--background-color);
   cursor: pointer;
   overflow: hidden;
