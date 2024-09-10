@@ -230,6 +230,8 @@ main img {
 /* sections */
 main > .section {
   margin: 40px 0;
+  width: 100%;
+  border: 1px solid red;
 }
 
 main > .section > div {
@@ -255,3 +257,4 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
