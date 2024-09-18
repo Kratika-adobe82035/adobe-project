@@ -1,0 +1,31 @@
+.table-dynamic table, th {
+    border: 1px solid black;
+    background-color:cornflowerblue;
+}
+.table-dynamic table, td {
+    border: 1px solid black;
+    background-color:aliceblue;
+}
+
+.table-dynamic .region-select>select{
+    width: 40%;
+    font-size: large;
+}
+
+#pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  #nextPage, #previousPage {
+    padding: 10px 15px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #nextPage:hover, #previousPage:hover {
+    background-color: #005bb5;
+  }

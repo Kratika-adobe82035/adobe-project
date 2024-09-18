@@ -1,0 +1,38 @@
+.herobaneerday1part2ass1-container .herobaneerday1part2ass1-wrapper {
+    max-width: unset;
+    padding: 0;
+  }
+  
+  .herobaneerday1part2ass1 {
+    position: relative;
+    padding: 40px 24px;
+    min-height: 300px;
+    background-color: rgba(0, 0, 255, 0.007);
+  }
+  
+  .herobaneerday1part2ass1 h2 {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #bfcdcd;
+  }
+  
+  .herobaneerday1part2ass1 picture {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    object-fit: cover;
+    box-sizing: border-box;
+  }
+  
+  .herobaneerday1part2ass1 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media (width >= 900px) {
+    .herobaneerday1part2ass1 {
+      padding: 40px 32px;
+    }
+  }

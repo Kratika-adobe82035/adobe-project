@@ -32,6 +32,15 @@
   </script>
   <link rel="stylesheet" href="/styles/styles.css">
   <style>
+    main.error h1{
+font-size: 10em;
+line-height: 0.9em;
+margin-bottom: 0;
+margin-top: 0;
+    }
+    .error_page{
+  text-align: center;
+}
     main.error {
       min-height: calc(100vh - var(--nav-height));
       display: flex;
@@ -40,6 +49,7 @@
 
     main.error .error-number {
       width: 100%;
+      max-width: 320px;
     }
 
     main.error .error-number text {
@@ -52,11 +62,13 @@
 <body>
   <header></header>
   <main class="error">
-    <div class="section">
-      <svg viewBox="1 0 38 18" class="error-number">
-        <text x="0" y="17">404</text>
-      </svg>
+    <div class="section error_page">
+      <!-- <svg viewBox="1 0 38 18" class="error-number"> -->
+        <!-- <text x="0" y="17">404</text> -->
+      <!-- </svg> -->
+       <h1>404</h1>
       <h2 class="error-message">Page Not Found</h2>
+      <h2 class="error-message">EDS Ass Day1 (part2)ass2</h2>
       <p class="button-container">
         <a href="/" class="button secondary error-button-home">Go home</a>
       </p>
