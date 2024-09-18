@@ -1,13 +1,13 @@
-.artgallerylist table, th {
+.table-dynamic table, th {
     border: 1px solid black;
     background-color:cornflowerblue;
 }
-.artgallerylist table, td {
+.table-dynamic table, td {
     border: 1px solid black;
     background-color:aliceblue;
 }
 
-.artgallerylist .region-select>select{
+.table-dynamic .region-select>select{
     width: 40%;
     font-size: large;
 }
