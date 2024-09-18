@@ -111,3 +111,5 @@ const loadScript = (url, callback, type) => {
       observer.observe(block);
     }
   }
+
+  

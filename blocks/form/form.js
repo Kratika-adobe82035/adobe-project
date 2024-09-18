@@ -1,4 +1,3 @@
-
 import createField from './form-fields.js';
 
 async function createForm(formHref, submitHref) {
@@ -15,7 +14,6 @@ async function createForm(formHref, submitHref) {
       form.append(field);
     }
   });
-
   // group fields into fieldsets
   const fieldsets = form.querySelectorAll('fieldset');
   fieldsets.forEach((fieldset) => {
@@ -23,13 +21,11 @@ async function createForm(formHref, submitHref) {
       fieldset.append(field);
     });
   });
-
   return form;
 }
 
 function generatePayload(form) {
   const payload = {};
-
   [...form.elements].forEach((field) => {
     if (field.name && field.type !== 'submit' && !field.disabled) {
       if (field.type === 'radio') {
@@ -46,12 +42,10 @@ function generatePayload(form) {
 
 async function handleSubmit(form) {
   if (form.getAttribute('data-submitting') === 'true') return;
-
   const submit = form.querySelector('button[type="submit"]');
   try {
     form.setAttribute('data-submitting', 'true');
     submit.disabled = true;
-
     // create payload
     const payload = generatePayload(form);
     const response = await fetch(form.dataset.action, {
@@ -83,10 +77,8 @@ export default async function decorate(block) {
   const formLink = links.find((link) => link.startsWith(window.location.origin) && link.endsWith('.json'));
   const submitLink = links.find((link) => link !== formLink);
   if (!formLink || !submitLink) return;
-
   const form = await createForm(formLink, submitLink);
   block.replaceChildren(form);
-
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const valid = form.checkValidity();
@@ -101,3 +93,4 @@ export default async function decorate(block) {
     }
   });
 }
+
