@@ -7,7 +7,6 @@ async function createTableHeader(table){
     tr.append(artname);tr.append(price);tr.append(discountprice);
     table.append(tr);
 }
-
 async function createTableRow(table,row,i){
     let tr=document.createElement("tr");
     let sno=document.createElement("td");sno.appendChild(document.createTextNode(i));
@@ -17,36 +16,24 @@ async function createTableRow(table,row,i){
     tr.append(artname);tr.append(price);tr.append(discountprice);
     table.append(tr);
 }
-
-
 async function createTable(jsonURL,val) {
-
     let  pathname = null;
-
     if(val){
         pathname=jsonURL;
     }
-
     else{
         pathname= new URL(jsonURL);
     }
-    
     const resp = await fetch(pathname);
     const json = await resp.json();
     console.log("=====JSON=====> {} ",json);
-    
     const table = document.createElement('table');
     createTableHeader(table);
     json.data.forEach((row,i) => {
-
         createTableRow(table,row,(i+1));
-
-      
     });
-    
     return table;
 }    
-
 export default async function decorate(block) {
     const artgallerylist = block.querySelector('a[href$=".json"]');
     const parientDiv=document.createElement('div');
@@ -58,8 +45,5 @@ export default async function decorate(block) {
         
     }
   
-  }
-
-
- 
+}
   
